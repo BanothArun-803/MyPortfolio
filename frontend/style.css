@@ -27,6 +27,9 @@ section {
   box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
+
+
+
 .nav-left {
   display: flex;
   align-items: center;
@@ -55,14 +58,25 @@ section {
   gap: 20px;
 }
 
+
+.nav-links a {
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0fbc74;
+}
+
 .nav-links li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s ease;
+
 }
 
 .nav-links li a:hover {
-  color: #a855f7;
+  color: #581799;
 }
 
 /* HERO */
@@ -157,7 +171,13 @@ footer {
   .project-card {
     width: 90%;
     margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4);
+}
+
 
   .skills-grid span {
     display: block;
@@ -168,4 +188,12 @@ footer {
   .contact-form {
     width: 90%;
   }
+}
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #9333ea;
+  transform: scale(1.05);
 }
